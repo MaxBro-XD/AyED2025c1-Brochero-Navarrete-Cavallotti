@@ -11,9 +11,9 @@ def bubble_sort(lista):
 
 if __name__=="__main__":
     lista=[random.randint(10000,99999) for i in range(500)]
-    print (f"lista original: {lista}")
+    print (f"Lista original: {lista}")
     r=bubble_sort(lista)
-    print(f"lista ordenada: {r}")
+    print(f"Lista ordenada: {r}")
         
 
             
