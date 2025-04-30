@@ -2,7 +2,6 @@
 # Crear tantos módulos como sea necesario para organizar el código
 
 import random
-lista1=[random.randint(10000,99999) for i in range(500)]
 def bubble_sort(lista):
     for i in range(len(lista)-1, 0, -1):
         for x in range(i):
@@ -10,8 +9,11 @@ def bubble_sort(lista):
                 lista[x], lista[x+1]= lista[x+1], lista[x]
     return lista
 
-r=bubble_sort(lista1)
-print(f"lista ordenada: {r}")
+if __name__=="__main__":
+    lista=[random.randint(10000,99999) for i in range(500)]
+    print (f"Lista original: {lista}")
+    r=bubble_sort(lista)
+    print(f"Lista ordenada: {r}")
         
 
             
