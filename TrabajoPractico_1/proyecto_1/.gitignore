@@ -1,4 +1,8 @@
-# Caché de Python
+# CACHÉ DE PYTHON
+
+# Este archivo le dice a Git qué archivos o carpetas debe ignorar.
+# Todo lo que esté listado acá no se subirá al repositorio (por ejemplo,
+# archivos temporales, caché, imágenes generadas, configuraciones locales, etc.).
 __pycache__/
 **/__pycache__/
 *.py[cod]
