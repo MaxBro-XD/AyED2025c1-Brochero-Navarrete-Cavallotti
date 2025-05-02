@@ -1,6 +1,6 @@
 # mazo.py
 
-from modulos.LDE import ListaDobleEnlazada  # Importa la clase ListaDobleEnlazada
+from modulos import ListaDobleEnlazada  # Importa la clase ListaDobleEnlazada
 from carta import Carta
 
 class DequeEmptyError(Exception):
