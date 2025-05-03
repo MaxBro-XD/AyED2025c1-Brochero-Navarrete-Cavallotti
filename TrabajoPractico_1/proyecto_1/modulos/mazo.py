@@ -1,6 +1,6 @@
-# mazo.py
+# mazo
 
-from modulos.LDE import ListaDobleEnlazada  # Importa la clase ListaDobleEnlazada
+from modulos.LDE import ListaDobleEnlazada  
 from carta import Carta
 
 class DequeEmptyError(Exception):
@@ -12,15 +12,15 @@ class Mazo:
         self._cartas = ListaDobleEnlazada()
 
     def poner_carta_arriba(self, carta):
-        """Agrega una carta al principio del mazo"""
+        
         self._cartas.agregar_al_inicio(carta)
 
     def poner_carta_abajo(self, carta):
-        """Agrega una carta al final del mazo"""
+        
         self._cartas.agregar_al_final(carta)
 
     def sacar_carta_arriba(self, mostrar=False):
-        """Saca la carta del inicio del mazo. Si mostrar=True, se hace visible"""
+        
         if self._cartas.estavacia():
             raise DequeEmptyError("El mazo está vacío")
         carta = self._cartas.extraer(0)
