@@ -1,0 +1,56 @@
+# 🐍Nombre del proyecto: Análisis de Algoritmos de Ordenamiento y Estructuras de Datos Aplicadas
+
+Breve descripción del proyecto:Este proyecto tiene como objetivo principal la implementación, análisis y comparación de distintos algoritmos de ordenamiento (burbuja, quicksort, y radix sort), evaluando su rendimiento mediante mediciones de tiempo sobre listas de números aleatorios. Además, se desarrolló una estructura de datos personalizada: una lista doblemente enlazada con múltiples operaciones eficientes, y se aplicó en la simulación del juego de cartas “Guerra” mediante una clase Mazo que utiliza dicha estructura. El trabajo incluye validaciones mediante excepciones, pruebas unitarias provistas por la cátedra y gráficos de rendimiento para verificar la eficiencia de los métodos implementados. El análisis de complejidad acompaña cada parte para justificar las decisiones algorítmicas tomadas.
+
+
+---
+## 🏗Arquitectura General
+
+
+El proyecto está organizado en módulos independientes para facilitar la comprensión, reutilización y mantenimiento del código:
+
+Ejercicio 1 – Algoritmos de Ordenamiento:
+Incluye implementaciones de Bubble Sort, Quicksort y Radix Sort. Cada algoritmo se encuentra encapsulado en funciones separadas. Se mide el tiempo de ejecución y se grafican los resultados para distintas longitudes de listas.
+
+Ejercicio 2 – Lista Doblemente Enlazada:
+Se implementa la estructura ListaDobleEnlazada con métodos personalizados para agregar, insertar, extraer, copiar, invertir y concatenar listas. Se incluyen pruebas de rendimiento y gráficas de tiempos de ejecución.
+
+Ejercicio 3 – Juego de Cartas "Guerra":
+Incluye clases:
+
+Carta: representa una carta de la baraja (valor, palo, visibilidad, comparación).
+
+Mazo: representa un mazo de cartas implementado mediante una lista doblemente enlazada (ListaDobleEnlazada).
+
+JuegoGuerra: se encarga de armar el mazo, repartir cartas y ejecutar el juego, considerando reglas de comparación y desempate por guerra. Se maneja aleatoriedad con random.seed
+
+Las gráficas de los resultados están disponibles en la carpeta independiente de cada ejercicio.
+
+El informe completo está disponible en la carpeta modulos, en formato pdf.
+
+---
+## 📑Dependencias
+
+1. *Python 3.x*
+2. *matplotlib* (pip install matplotlib)
+3. modulos.LDE (para la lista doblemente enlazada)
+mazo, carta (para el juego de cartas)
+
+---
+## 🚀Cómo Ejecutar el Proyecto
+1. *Clonar o descargar* el repositorio.
+
+2. *Crear y activar* un entorno virtual.
+
+3. *Instalar las dependencias*:
+   bash
+   pip install -r requirements.txt
+   
+   El archivo requirements.txt se encuentran en la carpeta [deps](./deps) del proyecto.
+
+---
+## 🙎‍♀️🙎‍♂️Autores
+
+- Apellido y Nombre del primer integrante: Caterina Navarrete
+- Apellido y Nombre del segundo integrante Guadalupe Cavallotti
+- Apellido y Nombre del primer integrante: Maximo Brochero
