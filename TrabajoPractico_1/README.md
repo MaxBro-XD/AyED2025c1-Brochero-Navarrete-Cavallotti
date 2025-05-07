@@ -1,3 +1,6 @@
+
+   ⚔️🔥🧠   ALGORITMOS EN GUERRA   ⚔️🔥🧠   
+
 TRABAJO PRÁCTICO 1 – Algoritmos y Estructuras de Datos - CAVALLOTTI, NAVARRETE, BROCHERO
 
 Este proyecto contiene la resolución completa del Trabajo Práctico Nº1 de la materia AyED. Se divide en tres secciones principales: 
