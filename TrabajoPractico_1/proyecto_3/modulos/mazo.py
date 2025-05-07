@@ -1,6 +1,6 @@
 # mazo
 
-from modulos.LDE import ListaDobleEnlazada  
+from modulos.LDE import ListaDobleEnlazada
 from carta import Carta
 
 class DequeEmptyError(Exception):
