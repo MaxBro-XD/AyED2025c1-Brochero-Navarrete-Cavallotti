@@ -1,52 +1,86 @@
-# 🐍Nombre del proyecto: Análisis de Algoritmos de Ordenamiento y Estructuras de Datos Aplicadas
+TRABAJO PRÁCTICO 1 – Algoritmos y Estructuras de Datos - CAVALLOTTI, NAVARRETE, BROCHERO
 
-Breve descripción del proyecto:Este proyecto tiene como objetivo principal la implementación, análisis y comparación de distintos algoritmos de ordenamiento (burbuja, quicksort, y radix sort), evaluando su rendimiento mediante mediciones de tiempo sobre listas de números aleatorios. Además, se desarrolló una estructura de datos personalizada: una lista doblemente enlazada con múltiples operaciones eficientes, y se aplicó en la simulación del juego de cartas “Guerra” mediante una clase Mazo que utiliza dicha estructura. El trabajo incluye validaciones mediante excepciones, pruebas unitarias provistas por la cátedra y gráficos de rendimiento para verificar la eficiencia de los métodos implementados. El análisis de complejidad acompaña cada parte para justificar las decisiones algorítmicas tomadas.
-
-
----
-## 🏗Arquitectura General
-
-
-El proyecto está organizado en módulos independientes para facilitar la comprensión, reutilización y mantenimiento del código:
-
-Ejercicio 1 – Algoritmos de Ordenamiento:
-Incluye implementaciones de Bubble Sort, Quicksort y Radix Sort. Cada algoritmo se encuentra encapsulado en funciones separadas. Se mide el tiempo de ejecución y se grafican los resultados para distintas longitudes de listas.
-
-Ejercicio 2 – Lista Doblemente Enlazada:
-Se implementa la estructura ListaDobleEnlazada con métodos personalizados para agregar, insertar, extraer, copiar, invertir y concatenar listas. Se incluyen pruebas de rendimiento y gráficas de tiempos de ejecución.
-
-Ejercicio 3 – Juego de Cartas "Guerra":
-Incluye clases:
-
-Carta: representa una carta de la baraja (valor, palo, visibilidad, comparación).
-
-Mazo: representa un mazo de cartas implementado mediante una lista doblemente enlazada (ListaDobleEnlazada).
-
-JuegoGuerra: se encarga de armar el mazo, repartir cartas y ejecutar el juego, considerando reglas de comparación y desempate por guerra. Se maneja aleatoriedad con random.seed
-
-Las gráficas de los resultados están disponibles en la carpeta independiente de cada ejercicio.
-
-El informe completo está disponible en la carpeta modulos, en formato pdf.
+Este proyecto contiene la resolución completa del Trabajo Práctico Nº1 de la materia AyED. Se divide en tres secciones principales: 
+algoritmos de ordenamiento, implementación de una lista doblemente enlazada como TAD, y la simulación del juego de cartas “Guerra” utilizando estructuras creadas previamente.
 
 ---
-## 📑Dependencias
 
-1. *Python 3.x*
-2. *matplotlib* (pip install matplotlib)
-3. modulos.LDE (para la lista doblemente enlazada)
-mazo, carta (para el juego de cartas)
+## 🏗 Arquitectura General
+
+📁 `TrabajoPractico_1/proyecto_1`  
+Contiene la implementación de tres algoritmos de ordenamiento:  
+- Burbuja  
+- Quicksort  
+- Radix sort  
+
+Además, se incluye un script para:
+- Generar listas aleatorias de 5 dígitos (500 a 1000 elementos)
+- Medir tiempos de ejecución
+- Comparar con el algoritmo `sorted()` de Python
+- Graficar los resultados obtenidos
+
+📁 `TrabajoPractico_1/proyecto_2`  
+Implementación de la clase `ListaDobleEnlazada`, que incluye:
+- Métodos especificados por la cátedra: agregar, extraer, copiar, invertir, concatenar, etc.
+- Manejo de excepciones para inserciones o extracciones inválidas
+- Gráficas de tiempo de ejecución de los métodos `len`, `copiar` e `invertir`
+- Código compatible con los tests oficiales provistos
+
+📁 `TrabajoPractico_1/proyecto_3`  
+Simulación completa del juego de cartas “Guerra”, utilizando:
+- `Carta`: clase que representa una carta
+- `Mazo`: clase que modela un mazo usando la lista doblemente enlazada del punto 2
+- `JuegoGuerra`: lógica del juego, guerras, turnos, ganador, empate
+- `main.py`: script para ejecutar automáticamente una partida
+
+📁 `docs/`  
+Incluye el informe PDF del trabajo, con:
+- Análisis de complejidad teórico y experimental
+- Gráficos generados
+- Explicaciones de diseño y decisiones tomadas
+
+📁 `data/`  
+Gráficos y archivos generados por los algoritmos de ordenamiento y análisis de métodos LDE.
+
+📁 `deps/requirements.txt`  
+Dependencias del proyecto listadas para fácil instalación.
 
 ---
-## 🚀Cómo Ejecutar el Proyecto
-1. *Clonar o descargar* el repositorio.
 
-2. *Crear y activar* un entorno virtual.
+## 📑 Dependencias
 
-3. *Instalar las dependencias*:
-   bash
-   pip install -r requirements.txt
-   
-   El archivo requirements.txt se encuentran en la carpeta [deps](./deps) del proyecto.
+- Python 3.x
+- matplotlib (solo para graficar en problemas 1 y 2)
+- time (módulo estándar de Python)
+
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/MaxBro-XD/AyED2025c1-Brochero-Navarrete-Cavallotti.git
+
+2. Crear y activar un entorno virtual:
+python -m venv env
+source env/bin/activate  # en Windows: env\Scripts\activate
+
+3.Instalar las dependencias:
+pip install -r deps/requirements.txt
+
+4.Para ejecutar cada parte:
+
+   A) Ordenamientos:
+cd TrabajoPractico_1/proyecto_1
+python main.py
+
+   B) LDE:
+cd TrabajoPractico_1/proyecto_2
+python test_lde.py  # o correr el script principal si hay
+
+   C) Juego guerra:
+cd TrabajoPractico_1/proyecto_3
+python main.py
 
 ---
 ## 🙎‍♀️🙎‍♂️Autores
