@@ -36,18 +36,17 @@ Simulación completa del juego de cartas “Guerra”, utilizando:
 - `JuegoGuerra`: lógica del juego, guerras, turnos, ganador, empate
 - `main.py`: script para ejecutar automáticamente una partida
 
-📁 `docs/`  
+📁 `TrabajoPractico_1`  
 Incluye el informe PDF del trabajo, con:
 - Análisis de complejidad teórico y experimental
 - Gráficos generados
 - Explicaciones de diseño y decisiones tomadas
 
-📁 `data/`  
-Gráficos y archivos generados por los algoritmos de ordenamiento y análisis de métodos LDE.
+📁 `TrabajoPractico_1/proyecto_1/main.py`  
+Gráficos y archivos generados por los algoritmos de ordenamiento.
 
-📁 `deps/requirements.txt`  
-Dependencias del proyecto listadas para fácil instalación.
-
+📁 `TrabajoPractico_1/proyecto_2/main.py` 
+Gráfica análisis de métodos LDE.
 ---
 
 ## 📑 Dependencias
