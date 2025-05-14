@@ -10,7 +10,8 @@ import random
 
 n = 20  # cantidad de ciclos de simulación
 
-cola_de_espera = list()
+from modulos.cola_prioridad import ColaConPrioridad
+cola_de_espera = ColaConPrioridad()
 
 # Ciclo que gestiona la simulación
 for i in range(n):
