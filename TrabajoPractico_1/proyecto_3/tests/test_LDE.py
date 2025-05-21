@@ -1,5 +1,5 @@
 # Archivo de test para realizar pruebas unitarias del modulo1
-from modulos import ListaDobleEnlazada
+from modulos.LDE import ListaDobleEnlazada
 import unittest
 import random
 

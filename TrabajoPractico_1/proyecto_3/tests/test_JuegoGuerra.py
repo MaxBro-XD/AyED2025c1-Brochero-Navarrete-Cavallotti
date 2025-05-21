@@ -6,6 +6,7 @@ Created on Sun Aug 21 11:23:53 2022
 
 
 from modulos.juegoguerra import JuegoGuerra
+from modulos.mazo import Mazo
 import unittest
 
 
