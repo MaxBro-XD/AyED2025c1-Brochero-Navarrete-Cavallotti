@@ -64,11 +64,6 @@ class ListaDobleEnlazada:
             self.tamanio += 1
 
     def extraer(self, posicion=None):
-        if posicion < 0:
-            posicion = self.tamanio + posicion
-        if posicion < 0 or posicion >= self.tamanio:
-            raise IndexError("Posición fuera de rango")
-
         if self.estavacia():
             raise IndexError("La lista está vacía")
         if posicion is None:
