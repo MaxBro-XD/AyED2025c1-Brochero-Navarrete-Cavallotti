@@ -41,8 +41,21 @@ def particion(lista,primero,ultimo):
 
    return marcaDer
 
+# ----------------------
+# Prueba del algoritmo
+# ----------------------
 if __name__=="__main__":
-    lista = [random.randint(10000,99999) for i in range(500)]
-    print(f"Lista original: {lista}")
-    quickosort(lista)
-    print(f"Lista ordenada: {lista}")
+    # Generar 500 números aleatorios de 5 dígitos (entre 10000 y 99999)
+    lista_numeros = [random.randint(10000, 99999) for _ in range(500)]
+
+    # Copia para comparar después
+    original = lista_numeros.copy()
+
+    # Ordenar con quicksort
+    quickosort(lista_numeros)
+    
+    # Verificar si está ordenado correctamente
+    if lista_numeros == sorted(original):
+        print(" La lista está ordenada correctamente con Quicksort.")
+    else:
+        print(" Error: la lista no está ordenada correctamente.")

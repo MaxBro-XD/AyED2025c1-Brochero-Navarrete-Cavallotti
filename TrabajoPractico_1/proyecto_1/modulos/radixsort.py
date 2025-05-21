@@ -40,18 +40,18 @@ def counting_sort_by_digit(arr, exp):
 # ----------------------
 # Prueba del algoritmo
 # ----------------------
+if __name__=="__main__":
+    # Generar 500 números aleatorios de 5 dígitos (entre 10000 y 99999)
+    lista_numeros = [random.randint(10000, 99999) for _ in range(500)]
 
-# Generar 500 números aleatorios de 5 dígitos (entre 10000 y 99999)
-lista_numeros = [random.randint(10000, 99999) for _ in range(500)]
+    # Copia para comparar después
+    original = lista_numeros.copy()
 
-# Copia para comparar después
-original = lista_numeros.copy()
+    # Ordenar con radix sort
+    radix_sort(lista_numeros)
 
-# Ordenar con radix sort
-radix_sort(lista_numeros)
-
-# Verificar si está ordenado correctamente
-if lista_numeros == sorted(original):
-    print(" La lista está ordenada correctamente con Radix Sort.")
-else:
-    print(" Error: la lista no está ordenada correctamente.")
+    # Verificar si está ordenado correctamente
+    if lista_numeros == sorted(original):
+        print(" La lista está ordenada correctamente con Radix Sort.")
+    else:
+        print(" Error: la lista no está ordenada correctamente.")
