@@ -1,5 +1,5 @@
-# Archivo de test para realizar pruebas unitarias del modulo1
-from modulos import ListaDobleEnlazada
+
+from modulos.LDE import ListaDobleEnlazada
 import unittest
 import random
 
@@ -24,7 +24,7 @@ class Test_LDE(unittest.TestCase):
         for item in self.lista_aux_3:
             self.lde_3.agregar_al_final(item)
 
-        self.posicion = random.randint(1, self.n_elementos - 1)  # randint incluye el extremo
+        # self.posicion = random.randint(1, self.n_elementos - 1)  # randint incluye el extremo
 
     def test_iteracion(self):
         """
