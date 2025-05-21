@@ -7,7 +7,7 @@ from modulos.quicksort import quickosort
 from modulos.radixsort import radix_sort
 
 # ---------- PRUEBA Y TIEMPOS ----------
-# tamaños = range(1,1000,50)  # Puedes modificar estos tamaños si deseas
+# tamaños = range(1,1000,50)  # Puedes modificar estos tamaños si deseas / otra manera de hacerlo
 tamaños = [_ for _ in range(1,1000,50)]
 tiempos_burbuja = []
 tiempos_quick = []
