@@ -1,7 +1,7 @@
 # mazo
 
 from modulos.LDE import ListaDobleEnlazada
-from carta import Carta
+from modulos.carta import Carta
 
 class DequeEmptyError(Exception):
     def __init__(self, mensaje="El mazo está vacío"):
