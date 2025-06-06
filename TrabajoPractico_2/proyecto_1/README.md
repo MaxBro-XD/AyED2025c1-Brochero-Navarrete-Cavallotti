@@ -23,8 +23,11 @@ Los informes y testeos correspondientes están ubicados en la carpeta 'modulos' 
 📑  **Dependencias**
 
 • Python 3.x
+
 • datetime (módulo estándar)
+
 • collections (módulo estándar)
+
 No se requiere instalación de bibliotecas externas. 
 
 
