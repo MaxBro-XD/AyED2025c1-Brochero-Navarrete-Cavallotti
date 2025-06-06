@@ -2,6 +2,7 @@
 
 
 📄 **Breve descripción del proyecto**
+
 Este proyecto aborda tres situaciones distintas modeladas con estructuras de datos específicas y eficientes:
 - Gestión de pacientes en una sala de emergencias mediante una cola de prioridad basada en montículo binario.
 - Registro y consulta de temperaturas a lo largo del tiempo utilizando un árbol AVL.
@@ -10,6 +11,7 @@ Cada aplicación busca resolver problemas reales utilizando estructuras que opti
 
 
 🏗  **Arquitectura General**
+
 El código está organizado en tres proyectos independientes:
 - Proyecto 1 (Sala de emergencias): incluye clases genéricas para la cola de prioridad (montículo binario) y una clase de pacientes.
 - Proyecto 2 (Temperaturas): contiene la implementación del árbol AVL y una clase 'Temperaturas_DB' que gestiona las operaciones requeridas.
@@ -19,6 +21,7 @@ Los informes y testeos correspondientes están ubicados en la carpeta 'modulos' 
 
 
 📑  **Dependencias**
+
 • Python 3.x
 • datetime (módulo estándar)
 • collections (módulo estándar)
@@ -26,6 +29,7 @@ No se requiere instalación de bibliotecas externas.
 
 
 🚀  **Cómo Ejecutar el Proyecto**
+
 1. Clonar o descargar el repositorio.
 2. Ingresar a la carpeta del proyecto correspondiente.
 
