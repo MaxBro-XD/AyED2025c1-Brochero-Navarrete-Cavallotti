@@ -7,6 +7,9 @@ class NodoArbol:
         self.padre = padre
         self.factorEquilibrio = 0
 
+    def devolver_cargaUtil(self):
+        return self.cargaUtil
+
     def tieneHijoIzquierdo(self):
         return self.hijoIzquierdo
 
@@ -143,8 +146,10 @@ class AVL:
        if self.raiz:
            res = self._obtener(clave,self.raiz)
            if res:
+                  print(f"Clave encontrada: {res.clave}, Carga útil: {res.cargaUtil}")
                   return res.cargaUtil
            else:
+                  print(f"Clave {clave} no encontrada en el árbol.")
                   return None
        else:
            return None
