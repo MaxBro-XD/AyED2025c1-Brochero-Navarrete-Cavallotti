@@ -52,11 +52,13 @@ class MonticuloBinario:
           self.infiltAbajo(i)
           i = i - 1
 
-miMonticulo = MonticuloBinario()
-miMonticulo.construirMonticulo([19,18,6,2,3])
+if __name__ == "__main__":
+   
+  miMonticulo = MonticuloBinario()
+  miMonticulo.construirMonticulo([19,18,6,2,3])
 
-print(miMonticulo.eliminarMin())
-print(miMonticulo.eliminarMin())
-print(miMonticulo.eliminarMin())
-print(miMonticulo.eliminarMin())
-print(miMonticulo.eliminarMin())
+  print(miMonticulo.eliminarMin())
+  print(miMonticulo.eliminarMin())
+  print(miMonticulo.eliminarMin())
+  print(miMonticulo.eliminarMin())
+  print(miMonticulo.eliminarMin())
