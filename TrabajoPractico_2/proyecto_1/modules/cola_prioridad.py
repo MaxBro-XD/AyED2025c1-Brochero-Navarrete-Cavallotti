@@ -1,5 +1,6 @@
 from modules.paciente import Paciente
 from modules.monticulo_binario import MonticuloBinario
+import time
 
 class ColaConPrioridad:
     def __init__(self):
@@ -27,3 +28,20 @@ class ColaConPrioridad:
         while copia.tamanoActual > 0:
             _, _, dato = copia.eliminarMin()
             yield dato
+
+if __name__ == "__main__":
+
+    cola = ColaConPrioridad()
+
+    print("Generando 5 pacientes aleatorios...\n")
+
+    for i in range(5):
+        paciente = Paciente()
+        print(f"Paciente {i+1}:{paciente}\n")
+        cola.append(paciente)
+        time.sleep(1)
+
+    print("\n Atendiendo pacientes en orden de prioridad \n")
+    while len(cola) > 0:
+        atendido = cola.pop()
+        print(f"Atendido:{atendido}\n")
