@@ -1,16 +1,15 @@
-# -*- coding: utf-8 -*-
 """
 Sala de emergencias
 """
 
 import time
 import datetime
-import modulos.paciente as pac
 import random
+import modules.paciente as pac
+from modules.cola_prioridad import ColaConPrioridad
 
 n = 20  # cantidad de ciclos de simulación
 
-from modulos.cola_prioridad import ColaConPrioridad
 cola_de_espera = ColaConPrioridad()
 
 # Ciclo que gestiona la simulación
@@ -21,21 +20,16 @@ for i in range(n):
     print('-*-'*15)
     print('\n', fecha_y_hora, '\n')
 
-    # Se crea un paciente un paciente por segundo
-    # La criticidad del paciente es aleatoria
+    # Se crea un paciente por segundo
     paciente = pac.Paciente()
     cola_de_espera.append(paciente)
 
     # Atención de paciente en este ciclo: en el 50% de los casos
-    if random.random() < 0.5:
-        # se atiende paciente que se encuentra al frente de la cola
-        paciente_atendido = cola_de_espera.pop(0)
+    if random.random() < 0.5 and len(cola_de_espera) > 0:
+        paciente_atendido = cola_de_espera.pop()
         print('*'*40)
         print('Se atiende el paciente:', paciente_atendido)
         print('*'*40)
-    else:
-        # se continúa atendiendo paciente de ciclo anterior
-        pass
     
     print()
 
