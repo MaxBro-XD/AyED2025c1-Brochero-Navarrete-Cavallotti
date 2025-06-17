@@ -1,6 +1,6 @@
 import os
 import tempfile
-from difusion_palomas import DifusionPalomas
+from modules.difusion_palomas import DifusionPalomas
 
 def crear_archivo_prueba():
     contenido = """Peligros,La Aparecida,10
